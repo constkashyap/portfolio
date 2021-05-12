@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+
+
+.intro {
+    background-color: black;
+    width: 100vw;
+    height: 96vh;
+    text-align: center;
+    position: relative; 
+}
+
+.about {
+    background-color: white;
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+    position: absolute;
+}
+
+.intro-text {
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+
+}
+
+.head-text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+.head-text-b {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.desc-text-b {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+
+
+.desc-text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+
+.menu-icon {
+    color: gray;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+
+
+}
+
+.tech-size {
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+    margin-left: 20px;
+}
+
+.tech-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.tech-icons-1 {
+    margin-top: 15px;
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.tech-icons-2 {
+    margin-top: 15px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.internships {
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.internship-1 {
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 15px;
+    height: 40%;
+    margin: 20px 10px 20px 10px;
+}
+
+.int-head {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.int-desc {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact {
+    width: 100%;
+    height: 70vh;
+    margin-top: 250px;
+    background-color: black;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.con-text-h {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2.5em;
+    font-weight: bold;
+}
+
+.con-text-l {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2.5em;
+    margin-right: 18px;
+    font-weight: bold;
+}
