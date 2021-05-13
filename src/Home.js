@@ -128,7 +128,7 @@ const handleSubmit = (e) => {
                             <SocialIcon style={{ height: 40, width: 40 }} url="https://twitter.com/sweetheartsata1" />
                             <SocialIcon style={{ height: 40, width: 40 }} bgColor="#EA4335"  url="mailto:sanchitkshyap@gmail.com" />
                         </div>
-                        <h5 className="foot-txt">Mad using React by @SanchitKashyap</h5>
+                        <h5 className="foot-txt">Made using React by @SanchitKashyap</h5>
 
 
 
