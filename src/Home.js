@@ -4,19 +4,33 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { DiDjango } from 'react-icons/di';
 import { FaReact, FaAws, FaDocker } from 'react-icons/fa';
 import { SiPostgresql, SiGraphql, SiRedux, SiMongodb } from 'react-icons/si';
-import { Button, Segment} from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
 import { AiFillMail } from 'react-icons/ai';
 import { SocialIcon } from 'react-social-icons';
-import * as emailjs from 'emailjs-com';
+import { send, init} from 'emailjs-com';
+init('user_3ye9YwtlBhgoJdeHk56lB')
 
 const Home = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-    
-    const handleChange = (e) => {
-        [e.target.name] = e.target.value
+
+const handleSubmit = (e) => {
+    e.preventDefault()
+   const template_params = {
+        from_name: name,
+        to_name: "Sanchit!",
+        email: email,
+        message: message
     }
+    send('service_9kwjzxx', 'template_8kvu1zc',template_params, 'user_3ye9YwtlBhgoJdeHk56lB')
+    .then((res) => {
+        console.log(res.text);
+    }).catch((err) => {
+        console.log(err);
+    })
+    
+}
 
     return ( 
         <React.Fragment>
@@ -90,7 +104,7 @@ const Home = () => {
                     </div>
                     <div className="contact">
                         <h2 className="con-text-h">Contact Me</h2>
-                        <div className="form"> 
+                        <form className="form"> 
                             <div className="labels">
                                 <label className="con-text-l">Name</label>
                                 <label className="con-text-l">Email</label>
@@ -98,14 +112,14 @@ const Home = () => {
                             </div>
 
                             <div className="inputs">
-                                <input className="input-area" />
-                                <input className="input-area" />
-                                <textarea className="mess-area" />
+                                <input value={name} onChange={e => (setName(e.target.value))} className="input-area" />
+                                <input value={email} onChange={e => (setEmail(e.target.value))} type="email" className="input-area" />
+                                <textarea value={message} onChange={e => (setMessage(e.target.value))} className="mess-area" />
                             </div>
                             
-                        </div>
+                        </form>
                         <div className="btn-send">
-                            <Button inverted color="green" ><AiFillMail/> Send</Button>
+                            <Button onClick={handleSubmit} inverted color="green" ><AiFillMail/> Send</Button>
                         </div>
                         <div className="connect">
                             
