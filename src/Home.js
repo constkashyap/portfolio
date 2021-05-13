@@ -4,7 +4,10 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { DiDjango } from 'react-icons/di';
 import { FaReact, FaAws, FaDocker } from 'react-icons/fa';
 import { SiPostgresql, SiGraphql, SiRedux, SiMongodb } from 'react-icons/si';
-
+import { Button, Segment} from 'semantic-ui-react';
+import { AiFillMail } from 'react-icons/ai';
+import { SocialIcon } from 'react-social-icons';
+import * as emailjs from 'emailjs-com';
 
 const Home = () => {
     const [name, setName] = useState("");
@@ -57,29 +60,30 @@ const Home = () => {
                         <h2 className="head-text-b">Internships</h2>
 
                         <div className="internship-1">
-                            <h3 className="int-head">Backend Engineer</h3>
+                            <h3 className="int-head">Backend and DevOps Engineer</h3>
                             <h4 className="int-head">Opmagic.AI</h4>
                             <h5 className="int-head">02/2021 - Present</h5>
-                            <p className="int-desc">Working on backend using Django.<br/>
-                                 Also working on Docker and AWS.</p>
+                            <p className="int-desc">I was working with Django.
+                                 Right now I am working with Docker and AWS services. My roles include handling a team of six developers for 
+                                 the development of various sub-modules of the product and also discussing and implementing new ideas with my team.</p>
+                        </div>
+
+                        <div className="internship-1">
+                            <h3 className="int-head">Backend Developer</h3>
+                            <h4 className="int-head">Iha Consulting Services</h4>
+                            <h5 className="int-head">07/2020 - 12/2020</h5>
+                            <p className="int-desc">I worked on the backend of an E-commerce web application with a team and brought in several ways to
+                                implement logic and new ideas into the application.Technologies I worked on were Django and Flask ( for microservices arch.).
+                            </p>
 
                         </div>
 
                         <div className="internship-1">
-                            <h3 className="int-head">Backend Engineer</h3>
-                            <h4 className="int-head">Opmagic.AI</h4>
-                            <h5 className="int-head">02/2021 - Present</h5>
-                            <p className="int-desc">Working on backend using Django.<br/>
-                                 Also working on Docker and AWS.</p>
-
-                        </div>
-
-                        <div className="internship-1">
-                            <h3 className="int-head">Backend Engineer</h3>
-                            <h4 className="int-head">Opmagic.AI</h4>
-                            <h5 className="int-head">02/2021 - Present</h5>
-                            <p className="int-desc">Working on backend using Django.<br/>
-                                 Also working on Docker and AWS.</p>
+                            <h3 className="int-head">Frontend Developer</h3>
+                            <h4 className="int-head">Satsara Technologies</h4>
+                            <h5 className="int-head">03/2020 - 05/2020</h5>
+                            <p className="int-desc">Worked on the frontend using React.<br/>
+                                 We made an application for managing and scheduling video conferences. I also worked with Zoom Web SDK and libraries like Pupeteer.</p>
 
                         </div>
 
@@ -92,15 +96,30 @@ const Home = () => {
                                 <label className="con-text-l">Email</label>
                                 <label className="con-text-l">Message</label>
                             </div>
-                            <div className="inputs">
-                                <input />
-                                <input />
-                                <textarea />
 
+                            <div className="inputs">
+                                <input className="input-area" />
+                                <input className="input-area" />
+                                <textarea className="mess-area" />
                             </div>
+                            
                         </div>
+                        <div className="btn-send">
+                            <Button inverted color="green" ><AiFillMail/> Send</Button>
+                        </div>
+                        <div className="connect">
+                            
+                            <SocialIcon style={{ height: 40, width: 40 }} bgColor="#0a66c2" url="https://linkedin.com/in/sanchitkashyap" />
+                            <SocialIcon style={{ height: 40, width: 40 }} bgColor="#ffffff" url="https://github.com/constkashyap" />
+                            <SocialIcon style={{ height: 40, width: 40 }} url="https://twitter.com/sweetheartsata1" />
+                            <SocialIcon style={{ height: 40, width: 40 }} bgColor="#EA4335"  url="mailto:sanchitkshyap@gmail.com" />
+                        </div>
+                        <h5 className="foot-txt">Made using React by @SanchitKashyap</h5>
+
+
 
                     </div>
+                    
                 </div>
                 
             </div>
